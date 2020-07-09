@@ -30,7 +30,7 @@ const AnimalForm = ({ errors, touched, values }) => {
       <form onSubmit={event => handleSubmit(event)}>
         <label htmlFor="species">Species:</label>
         <input
-          id="species"
+          id="species" // AnimalForm.test.js ( getByLabelText() )
           type="text"
           name="species"
           onChange={event => handleChange(event)}
